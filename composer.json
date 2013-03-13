@@ -1,0 +1,19 @@
+{
+    "name": "fzerorubigd/phpthumb-service-provider",
+    "description": "PHPThumb service provider for silex",
+    "keywords": ["silex"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fzerorubid",
+            "email": "me@cyberrabbits.net"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.0.*@dev",
+        "dannytrue/phpthumb": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "fzerorubigd\\Silex": "src" }
+    }
+}
