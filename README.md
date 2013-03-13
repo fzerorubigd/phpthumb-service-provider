@@ -7,7 +7,7 @@ A PHPThumb ServiceProvider for [Silex](http://silex.sensiolabs.org) base on [PHP
 ### Getting the thumb generator object
 
 ```php
-$app->register(new fzerorubigd\PHPThumbServiceProvider());
+$app->register(new fzerorubigd\Silex\PHPThumbServiceProvider());
 ```
 
 ```php

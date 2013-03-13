@@ -18,11 +18,11 @@ class PHPThumbServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {
-		$app['phpthumb'] = $app->protect(
-			function ($fileName, $options = array(), PluginCollection $plugins = null) {
-				return new PHPThumb\GD($fileName, $options, $plugins);
-			}
-		);
+        $app['phpthumb'] = $app->protect(
+            function ($fileName, $options = array(), PluginCollection $plugins = null) {
+                return new PHPThumb\GD($fileName, $options, $plugins);
+            }
+        );
     }
 
     public function boot(Application $app)
