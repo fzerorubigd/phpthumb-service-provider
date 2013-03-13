@@ -13,6 +13,8 @@ namespace fzerorubigd\Silex;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
+use PHPThumb\GD;
+use PHPThumb\PluginCollection;
 
 class PHPThumbServiceProvider implements ServiceProviderInterface
 {
@@ -20,7 +22,7 @@ class PHPThumbServiceProvider implements ServiceProviderInterface
     {
         $app['phpthumb'] = $app->protect(
             function ($fileName, $options = array(), PluginCollection $plugins = null) {
-                return new PHPThumb\GD($fileName, $options, $plugins);
+                return new GD($fileName, $options, $plugins);
             }
         );
     }
